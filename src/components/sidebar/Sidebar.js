@@ -32,7 +32,7 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/movies" onClick={closeSidebar}>
+            <Link to="/products" onClick={closeSidebar}>
               Movies
             </Link>
           </li>

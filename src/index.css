@@ -176,8 +176,8 @@ p {
 
 .btn {
   text-transform: uppercase;
-  background: var(--clr-primary-5);
-  color: var(--clr-primary-10);
+  background: var(--clr-blue-light);
+  color: var(--clr-black-light);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
@@ -191,7 +191,7 @@ p {
 }
 .btn:hover {
   color: var(--clr-primary-1);
-  background: var(--clr-primary-7);
+  background: var(--clr-purple);
 }
 .title {
   text-align: center;
