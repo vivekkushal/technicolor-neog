@@ -5,7 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Navbar from './components/navbar/Navbar';
 import Sidebar from './components/sidebar/Sidebar';
-import About from './components/about/About';
+import About from './pages/about/About';
 import Products from './components/products/Products';
 import SingleProduct from './components/singleProduct/SingleProduct';
 import Cart from './components/cart/Cart';
