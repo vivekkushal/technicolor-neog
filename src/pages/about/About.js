@@ -15,7 +15,9 @@ const About = () => {
             Welcome to Technicolor, your ultimate destination for all things
             movies! Whether you're a passionate cinephile, a casual moviegoer,
             or just someone looking for a captivating escape, we've got you
-            covered.
+            covered. At Technicolor, we're dedicated to celebrating the magic of
+            the silver screen. Our goal is to provide you with a comprehensive
+            and immersive experience that caters to your love for movies.
           </p>
         </article>
       </Wrapper>
@@ -33,6 +35,11 @@ const Wrapper = styled.section`
     height: 500px;
     object-fit: cover;
   }
+
+  h2 {
+    color: var(--clr-purple);
+  }
+
   p {
     line-height: 2;
     max-width: 45em;
