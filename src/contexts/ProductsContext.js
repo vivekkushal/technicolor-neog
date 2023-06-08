@@ -1,6 +1,15 @@
-import { createContext, useReducer } from 'react';
-import { SIDEBAR_OPEN, SIDEBAR_CLOSE } from '../actions';
+import { createContext, useReducer, useEffect } from 'react';
+import { products_url as url } from '../utils/constants';
+import { actions } from '../actions';
 import ProductsReducer from '../reducers/ProductsReducer';
+
+const {
+  OPEN_SIDEBAR,
+  CLOSE_SIDEBAR,
+  // GET_ALL_PRODUCTS_START,
+  // GET_ALL_PRODUCTS_SUCCESS,
+  // GET_ALL_PRODUCTS_ERROR,
+} = actions;
 
 const initialState = {
   isSidebarOpen: false,
@@ -12,12 +21,22 @@ export function ProductsProvider({ children }) {
   const [state, dispatch] = useReducer(ProductsReducer, initialState);
 
   const openSidebar = () => {
-    dispatch({ type: SIDEBAR_OPEN });
+    dispatch({ type: OPEN_SIDEBAR });
   };
 
   const closeSidebar = () => {
-    dispatch({ type: SIDEBAR_CLOSE });
+    dispatch({ type: CLOSE_SIDEBAR });
   };
+
+  const fetchProducts = async (url) => {
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
+  };
+
+  useEffect(() => {
+    fetchProducts(url);
+  });
 
   return (
     <ProductsContext.Provider value={{ ...state, openSidebar, closeSidebar }}>

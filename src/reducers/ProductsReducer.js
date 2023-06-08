@@ -1,11 +1,21 @@
-import { SIDEBAR_OPEN, SIDEBAR_CLOSE } from '../actions';
+import { actions } from '../actions';
+
+const {
+  OPEN_SIDEBAR,
+  CLOSE_SIDEBAR,
+  // GET_ALL_PRODUCTS_START,
+  // GET_ALL_PRODUCTS_SUCCESS,
+  // GET_ALL_PRODUCTS_ERROR,
+} = actions;
 
 const ProductsReducer = (state, action) => {
-  if (action.type === SIDEBAR_OPEN) {
-    return { ...state, isSidebarOpen: true };
-  }
-  if (action.type === SIDEBAR_CLOSE) {
-    return { ...state, isSidebarOpen: false };
+  switch (action.type) {
+    case OPEN_SIDEBAR:
+      return { ...state, isSidebarOpen: true };
+    case CLOSE_SIDEBAR:
+      return { ...state, isSidebarOpen: false };
+    default:
+      return state;
   }
 };
 
