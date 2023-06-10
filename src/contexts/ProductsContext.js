@@ -16,7 +16,6 @@ const initialState = {
   productsLoading: false,
   productsError: false,
   products: [],
-  featuredProducts: [],
 };
 
 export const ProductsContext = createContext();

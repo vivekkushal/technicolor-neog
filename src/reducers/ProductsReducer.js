@@ -17,14 +17,10 @@ const ProductsReducer = (state, action) => {
     case GET_ALL_PRODUCTS_START:
       return { ...state, productsLoading: true };
     case GET_ALL_PRODUCTS_SUCCESS:
-      const featuredProducts = action.payload.filter(
-        (product) => product.featured === true
-      );
       return {
         ...state,
         productsLoading: false,
-        products: action.products,
-        featuredProducts: featuredProducts,
+        products: action.payload,
       };
     case GET_ALL_PRODUCTS_ERROR:
       return { ...state, productsLoading: false, productsError: true };

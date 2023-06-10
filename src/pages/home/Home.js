@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../../components/hero/Hero';
-import FeaturedProducts from '../../components/featuredProducts/FeaturedProducts';
+import FeaturedProducts from '../../components/productCategories/ProductCategories';
 import Contact from '../../components/contact/Contact';
 
 function Home() {
