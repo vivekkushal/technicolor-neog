@@ -10,7 +10,7 @@ export const products = [
     _id: uuid(),
     title: 'The Shawshank Redemption',
     director: 'Frank Darabont',
-    price: 9.99,
+    price: 999,
     releaseYear: 1994,
     rating: 9.3,
     description:
@@ -22,7 +22,7 @@ export const products = [
     _id: uuid(),
     title: 'The Godfather',
     director: 'Francis Ford Coppola',
-    price: 8.99,
+    price: 899,
     releaseYear: 1972,
     rating: 9.2,
     description:
@@ -34,7 +34,7 @@ export const products = [
     _id: uuid(),
     title: 'Pulp Fiction',
     director: 'Quentin Tarantino',
-    price: 7.99,
+    price: 799,
     releaseYear: 1994,
     rating: 8.9,
     description:
@@ -46,7 +46,7 @@ export const products = [
     _id: uuid(),
     title: 'The Dark Knight',
     director: 'Christopher Nolan',
-    price: 9.99,
+    price: 999,
     releaseYear: 2008,
     rating: 9.0,
     description:
@@ -59,7 +59,7 @@ export const products = [
     _id: uuid(),
     title: "Schindler's List",
     director: 'Steven Spielberg',
-    price: 8.99,
+    price: 899,
     releaseYear: 1993,
     rating: 8.9,
     description:
@@ -71,7 +71,7 @@ export const products = [
     _id: uuid(),
     title: 'Fight Club',
     director: 'David Fincher',
-    price: 7.99,
+    price: 799,
     releaseYear: 1999,
     rating: 8.8,
     description:
@@ -83,7 +83,7 @@ export const products = [
     _id: uuid(),
     title: 'Forrest Gump',
     director: 'Robert Zemeckis',
-    price: 8.99,
+    price: 899,
     releaseYear: 1994,
     rating: 8.8,
     description:
@@ -95,7 +95,7 @@ export const products = [
     _id: uuid(),
     title: 'Inception',
     director: 'Christopher Nolan',
-    price: 9.99,
+    price: 999,
     releaseYear: 2010,
     rating: 8.7,
     description:
@@ -107,7 +107,7 @@ export const products = [
     _id: uuid(),
     title: 'The Matrix',
     director: 'The Wachowski Brothers',
-    price: 7.99,
+    price: 799,
     releaseYear: 1999,
     rating: 8.7,
     description:
@@ -119,7 +119,7 @@ export const products = [
     _id: uuid(),
     title: 'Goodfellas',
     director: 'Martin Scorsese',
-    price: 8.99,
+    price: 899,
     releaseYear: 1990,
     rating: 8.7,
     description:
@@ -131,7 +131,7 @@ export const products = [
     _id: uuid(),
     title: 'The Lord of the Rings: The Fellowship of the Ring',
     director: 'Peter Jackson',
-    price: 9.99,
+    price: 999,
     releaseYear: 2001,
     rating: 8.8,
     description:
@@ -143,7 +143,7 @@ export const products = [
     _id: uuid(),
     title: 'The Lord of the Rings: The Two Towers',
     director: 'Peter Jackson',
-    price: 9.99,
+    price: 999,
     releaseYear: 2002,
     rating: 8.7,
     description:
@@ -155,7 +155,7 @@ export const products = [
     _id: uuid(),
     title: 'The Lord of the Rings: The Return of the King',
     director: 'Peter Jackson',
-    price: 9.99,
+    price: 999,
     releaseYear: 2003,
     rating: 8.9,
     description:
@@ -167,7 +167,7 @@ export const products = [
     _id: uuid(),
     title: 'Seven',
     director: 'David Fincher',
-    price: 7.99,
+    price: 799,
     releaseYear: 1995,
     rating: 8.6,
     description:
@@ -179,7 +179,7 @@ export const products = [
     _id: uuid(),
     title: 'The Silence of the Lambs',
     director: 'Jonathan Demme',
-    price: 8.99,
+    price: 899,
     releaseYear: 1991,
     rating: 8.6,
     description:
@@ -191,7 +191,7 @@ export const products = [
     _id: uuid(),
     title: 'The Usual Suspects',
     director: 'Bryan Singer',
-    price: 7.99,
+    price: 799,
     releaseYear: 1995,
     rating: 8.5,
     description:
@@ -203,7 +203,7 @@ export const products = [
     _id: uuid(),
     title: 'Saving Private Ryan',
     director: 'Steven Spielberg',
-    price: 8.99,
+    price: 899,
     releaseYear: 1998,
     rating: 8.6,
     description:
@@ -216,7 +216,7 @@ export const products = [
     _id: uuid(),
     title: 'The Lion King',
     director: 'Roger Allers, Rob Minkoff',
-    price: 7.99,
+    price: 799,
     releaseYear: 1994,
     rating: 8.5,
     description:
@@ -229,7 +229,7 @@ export const products = [
     _id: uuid(),
     title: 'Interstellar',
     director: 'Christopher Nolan',
-    price: 9.99,
+    price: 999,
     releaseYear: 2014,
     rating: 8.6,
     description:
@@ -241,7 +241,7 @@ export const products = [
     _id: uuid(),
     title: 'Back to the Future',
     director: 'Robert Zemeckis',
-    price: 7.99,
+    price: 799,
     releaseYear: 1985,
     rating: 8.5,
     description:

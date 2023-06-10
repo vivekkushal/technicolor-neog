@@ -10,24 +10,22 @@ function FeaturedProducts() {
   const { productsLoading, productsError, featuredProducts } =
     useContext(ProductsContext);
 
-  if (productsLoading) {
-    return <Loading />;
-  }
-  if (productsError) {
-    return <Error />;
-  }
   return (
-    <Wrapper className="section">
-      <div className="title">
-        <h2>featured movies</h2>
-        <div className="underline"></div>
-      </div>
-      <div className="section-center featured">
-        {featuredProducts.map((product) => (
-          <Product key={product.id} {...product} />
-        ))}
-      </div>
-    </Wrapper>
+    <>
+      {productsLoading && <Loading />}
+      {productsError && <Error />}
+      <Wrapper className="section">
+        <div className="title">
+          <h2>featured movies</h2>
+          <div className="underline"></div>
+        </div>
+        <div className="section-center featured">
+          {featuredProducts.map((product) => (
+            <Product key={product.id} {...product} />
+          ))}
+        </div>
+      </Wrapper>
+    </>
   );
 }
 

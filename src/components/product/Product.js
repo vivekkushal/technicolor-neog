@@ -1,12 +1,17 @@
 import styled from 'styled-components';
 // import { formatPrice } from '../utils/helpers'
-// import { FaSearch } from 'react-icons/fa'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
-function Product({ image, name, price, id }) {
+function Product({ image, title, price, _id }) {
   return (
     <Wrapper>
-      <div className="container"></div>
+      <Link to={`/products/${_id}`} className="container">
+        <img src={image} alt={title} />
+      </Link>
+      <footer>
+        <h5>{title}</h5>
+        <p>{price}</p>
+      </footer>
     </Wrapper>
   );
 }
@@ -24,31 +29,8 @@ const Wrapper = styled.article`
     border-radius: var(--radius);
     transition: var(--transition);
   }
-  .link {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: var(--clr-primary-5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    transition: var(--transition);
-    opacity: 0;
-    cursor: pointer;
-    svg {
-      font-size: 1.25rem;
-      color: var(--clr-white);
-    }
-  }
   .container:hover img {
     opacity: 0.5;
-  }
-  .container:hover .link {
-    opacity: 1;
   }
   footer {
     margin-top: 1rem;
@@ -62,9 +44,13 @@ const Wrapper = styled.article`
     font-weight: 400;
   }
 
+  footer h5 {
+    color: var(--clr-purple);
+  }
   footer p {
-    color: var(--clr-primary-5);
+    color: var(--clr-blue-light);
     letter-spacing: var(--spacing);
   }
 `;
+
 export default Product;
