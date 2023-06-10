@@ -7,7 +7,7 @@ import CartButtons from '../cartButtons/CartButtons';
 import { ProductsContext } from '../../contexts/ProductsContext';
 // import { useUserContext } from '../context/user_context';
 
-const Nav = () => {
+function Nav() {
   const { openSidebar } = useContext(ProductsContext);
 
   return (
@@ -37,7 +37,7 @@ const Nav = () => {
       </div>
     </NavContainer>
   );
-};
+}
 
 const NavContainer = styled.nav`
   height: 5rem;

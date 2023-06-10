@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import heroBcg from '../../assets/hero-bcg.jpeg';
 import heroBcg2 from '../../assets/hero-bcg-2.jpeg';
 
-const Hero = () => {
+function Hero() {
   return (
     <Wrapper className="section-center">
       <article className="content">
@@ -28,7 +28,7 @@ const Hero = () => {
       </article>
     </Wrapper>
   );
-};
+}
 
 const Wrapper = styled.section`
   min-height: 60vh;

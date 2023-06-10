@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Footer = () => {
+function Footer() {
   return (
     <Wrapper>
       <h5>
@@ -10,7 +10,7 @@ const Footer = () => {
       </h5>
     </Wrapper>
   );
-};
+}
 
 const Wrapper = styled.footer`
   height: 5rem;

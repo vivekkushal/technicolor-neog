@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import aboutImg from '../../assets/hero-bcg.jpeg';
 
-const About = () => {
+function About() {
   return (
     <main>
       <Wrapper className="page section section-center">
@@ -23,7 +23,7 @@ const About = () => {
       </Wrapper>
     </main>
   );
-};
+}
 
 const Wrapper = styled.section`
   display: grid;

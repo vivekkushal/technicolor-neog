@@ -3,7 +3,7 @@ import Hero from '../../components/hero/Hero';
 import FeaturedProducts from '../../components/featuredProducts/FeaturedProducts';
 import Contact from '../../components/contact/Contact';
 
-const Home = () => {
+function Home() {
   return (
     <main>
       <Hero />
@@ -11,6 +11,6 @@ const Home = () => {
       <Contact />
     </main>
   );
-};
+}
 
 export default Home;

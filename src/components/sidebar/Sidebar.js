@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import CartButtons from '../cartButtons/CartButtons';
 // import { useUserContext } from '../context/user_context';
 
-const Sidebar = () => {
+function Sidebar() {
   const { isSidebarOpen, closeSidebar } = useContext(ProductsContext);
 
   return (
@@ -46,7 +46,7 @@ const Sidebar = () => {
       </aside>
     </SidebarContainer>
   );
-};
+}
 
 const SidebarContainer = styled.div`
   text-align: center;

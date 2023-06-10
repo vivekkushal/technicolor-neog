@@ -7,7 +7,7 @@ import { ProductsContext } from '../../contexts/ProductsContext';
 // import { useCartContext } from '../context/cart_context';
 // import { useUserContext } from '../context/user_context';
 
-const CartButtons = () => {
+function CartButtons() {
   const { closeSidebar } = useContext(ProductsContext);
 
   return (
@@ -29,7 +29,7 @@ const CartButtons = () => {
       </button>
     </Wrapper>
   );
-};
+}
 
 const Wrapper = styled.div`
   display: grid;
