@@ -9,6 +9,9 @@ const {
   GET_ALL_PRODUCTS_START,
   GET_ALL_PRODUCTS_SUCCESS,
   GET_ALL_PRODUCTS_ERROR,
+  GET_SINGLE_PRODUCT_START,
+  GET_SINGLE_PRODUCT_SUCCESS,
+  GET_SINGLE_PRODUCT_ERROR,
 } = actions;
 
 const initialState = {
@@ -16,6 +19,9 @@ const initialState = {
   productsLoading: false,
   productsError: false,
   products: [],
+  singleProductLoading: false,
+  singleProductError: false,
+  singleProduct: {},
 };
 
 export const ProductsContext = createContext();
@@ -32,13 +38,24 @@ export function ProductsProvider({ children }) {
   };
 
   const fetchProducts = async (url) => {
+    dispatch({ type: GET_ALL_PRODUCTS_START });
     try {
-      dispatch({ type: GET_ALL_PRODUCTS_START });
       const response = await fetch(url);
       const data = await response.json();
       dispatch({ type: GET_ALL_PRODUCTS_SUCCESS, payload: data.products });
     } catch (error) {
       dispatch({ type: GET_ALL_PRODUCTS_ERROR });
+    }
+  };
+
+  const fetchSingleProduct = async (url) => {
+    dispatch({ type: GET_SINGLE_PRODUCT_START });
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+      dispatch({ type: GET_SINGLE_PRODUCT_SUCCESS, payload: data.product });
+    } catch (error) {
+      dispatch({ type: GET_SINGLE_PRODUCT_ERROR });
     }
   };
 
