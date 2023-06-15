@@ -7,7 +7,7 @@ import { v4 as uuid } from 'uuid';
 
 export const products = [
   {
-    _id: uuid(),
+    _id: '5acb8651-22da-47da-912e-6013f76e1521',
     title: 'The Shawshank Redemption',
     director: 'Frank Darabont',
     price: 999,
@@ -17,10 +17,10 @@ export const products = [
       'Two imprisoned men bond over several years, finding solace and eventual redemption through acts of common decency.',
     image:
       'https://www.themoviedb.org/t/p/w1280/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg',
-    genres: ['Drama', 'Crima'],
+    genres: ['Drama', 'Crime'],
   },
   {
-    _id: uuid(),
+    _id: '31af446c-7602-4847-8c45-150d74fedb35',
     title: 'The Godfather',
     director: 'Francis Ford Coppola',
     price: 899,
@@ -33,7 +33,7 @@ export const products = [
     genres: ['Drama', 'Crime'],
   },
   {
-    _id: uuid(),
+    _id: '48167e42-958b-4639-9e1a-74109794f3b2',
     title: 'Pulp Fiction',
     director: 'Quentin Tarantino',
     price: 799,
@@ -46,7 +46,7 @@ export const products = [
     genres: ['Thriller', 'Crime'],
   },
   {
-    _id: uuid(),
+    _id: 'f8491c6d-597b-419c-a8b7-bf077585077b',
     title: 'The Dark Knight',
     director: 'Christopher Nolan',
     price: 999,
@@ -59,7 +59,7 @@ export const products = [
     genres: ['Drama', 'Action', 'Crime', 'Thriller'],
   },
   {
-    _id: uuid(),
+    _id: 'f019cce4-1345-425d-be91-3106a491403b',
     title: "Schindler's List",
     director: 'Steven Spielberg',
     price: 899,
@@ -72,7 +72,7 @@ export const products = [
     genres: ['Drama', 'History', 'War'],
   },
   {
-    _id: uuid(),
+    _id: 'cec7e58a-7411-4adb-9cc5-4ea1091f6f01',
     title: 'Fight Club',
     director: 'David Fincher',
     price: 799,
@@ -85,7 +85,7 @@ export const products = [
     genres: ['Drama', 'Thriller', 'Comedy'],
   },
   {
-    _id: uuid(),
+    _id: '96c61db9-f9a0-4e39-abbc-a1bb5ca9be16',
     title: 'Forrest Gump',
     director: 'Robert Zemeckis',
     price: 899,
@@ -98,7 +98,7 @@ export const products = [
     genres: ['Comedy', 'Drama', 'Romance'],
   },
   {
-    _id: uuid(),
+    _id: '07216304-1222-43b5-bd8a-1977380c2dd5',
     title: 'Inception',
     director: 'Christopher Nolan',
     price: 999,
@@ -111,7 +111,7 @@ export const products = [
     genres: ['Action', 'Science Fiction', 'Adventure'],
   },
   {
-    _id: uuid(),
+    _id: '39bc0e05-b1be-4fb8-94f6-e91202666026',
     title: 'The Matrix',
     director: 'The Wachowski Brothers',
     price: 799,
@@ -124,7 +124,7 @@ export const products = [
     genres: ['Action', 'Science Fiction'],
   },
   {
-    _id: uuid(),
+    _id: '4e03e60b-7402-4043-b2b5-c58b3b160019',
     title: 'Goodfellas',
     director: 'Martin Scorsese',
     price: 899,
@@ -137,7 +137,7 @@ export const products = [
     genres: ['Drama', 'Crime'],
   },
   {
-    _id: uuid(),
+    _id: '7e2c5314-5769-4986-be1c-6e2e0f7be344',
     title: 'The Lord of the Rings: The Fellowship of the Ring',
     director: 'Peter Jackson',
     price: 999,
@@ -150,7 +150,7 @@ export const products = [
     genres: ['Adventure', 'Fantasy', 'Action'],
   },
   {
-    _id: uuid(),
+    _id: '1bc13edc-6a70-4d66-8219-10c5b1494d51',
     title: 'The Lord of the Rings: The Two Towers',
     director: 'Peter Jackson',
     price: 999,
@@ -163,7 +163,7 @@ export const products = [
     genres: ['Adventure', 'Fantasy', 'Action'],
   },
   {
-    _id: uuid(),
+    _id: 'be31c9d8-43c0-42f0-accc-346adb26d81e',
     title: 'The Lord of the Rings: The Return of the King',
     director: 'Peter Jackson',
     price: 999,
@@ -176,7 +176,7 @@ export const products = [
     genres: ['Adventure', 'Fantasy', 'Action'],
   },
   {
-    _id: uuid(),
+    _id: '25581a3f-5238-4715-8e50-28e584eca375',
     title: 'Seven',
     director: 'David Fincher',
     price: 799,
@@ -189,7 +189,7 @@ export const products = [
     genres: ['Crime', 'Thriller'],
   },
   {
-    _id: uuid(),
+    _id: '6b28a62b-1528-4741-8620-d929ce5475e1',
     title: 'The Silence of the Lambs',
     director: 'Jonathan Demme',
     price: 899,
@@ -202,7 +202,7 @@ export const products = [
     genres: ['Crime', 'Drama', 'Thriller'],
   },
   {
-    _id: uuid(),
+    _id: 'fd961344-414c-4779-b8d1-6b844d0f1d52',
     title: 'The Usual Suspects',
     director: 'Bryan Singer',
     price: 799,
@@ -215,7 +215,7 @@ export const products = [
     genres: ['Drama', 'Crime', 'Thriller'],
   },
   {
-    _id: uuid(),
+    _id: '0a13e837-10ad-4e12-8790-eefe28cdccff',
     title: 'Saving Private Ryan',
     director: 'Steven Spielberg',
     price: 899,
@@ -228,7 +228,7 @@ export const products = [
     genres: ['Drama', 'History', 'War'],
   },
   {
-    _id: uuid(),
+    _id: '0c1e8eb1-563e-471b-af84-15885dee6741',
     title: 'The Lion King',
     director: 'Roger Allers, Rob Minkoff',
     price: 799,
@@ -241,7 +241,7 @@ export const products = [
     genres: ['Animation', 'Drama'],
   },
   {
-    _id: uuid(),
+    _id: 'a0be506f-aeca-448e-bddc-d6a3ce4645fc',
     title: 'Interstellar',
     director: 'Christopher Nolan',
     price: 999,
@@ -254,7 +254,7 @@ export const products = [
     genres: ['Adventure', 'Drama', 'Science Fiction'],
   },
   {
-    _id: uuid(),
+    _id: '92f83e00-8196-4fca-b5ab-4ee5ed600c42',
     title: 'Back to the Future',
     director: 'Robert Zemeckis',
     price: 799,
