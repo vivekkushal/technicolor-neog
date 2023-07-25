@@ -32,6 +32,9 @@ function Nav() {
           <li>
             <Link to="/products">Movies</Link>
           </li>
+          <li>
+            <Link to="/checkout">Checkout</Link>
+          </li>
         </ul>
         <CartButtons />
       </div>
@@ -81,7 +84,7 @@ const NavContainer = styled.nav`
   .cart-btn-wrapper {
     display: none;
   }
-  @media (min-width: 850px) {
+  @media (min-width: 950px) {
     .nav-toggle {
       display: none;
     }

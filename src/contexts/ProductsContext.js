@@ -53,7 +53,11 @@ export function ProductsProvider({ children }) {
     try {
       const response = await fetch(url);
       const data = await response.json();
-      dispatch({ type: GET_SINGLE_PRODUCT_SUCCESS, payload: data.product });
+      if (data.product === null) {
+        dispatch({ type: GET_SINGLE_PRODUCT_ERROR });
+      } else {
+        dispatch({ type: GET_SINGLE_PRODUCT_SUCCESS, payload: data.product });
+      }
     } catch (error) {
       dispatch({ type: GET_SINGLE_PRODUCT_ERROR });
     }

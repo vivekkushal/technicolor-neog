@@ -1,12 +1,11 @@
 import styled from 'styled-components';
-// import { formatPrice } from '../utils/helpers'
 import { Link } from 'react-router-dom';
 
 function Category({ categoryName, image }) {
   return (
     <Wrapper>
       <Link to="/products" className="container">
-        <img src={image} alt="dummy" />
+        <img src={image} alt="movie genre" />
       </Link>
       <footer>
         <h5>{categoryName}</h5>
@@ -37,18 +36,10 @@ const Wrapper = styled.article`
     justify-content: space-between;
     align-items: center;
   }
-  footer h5,
-  footer p {
-    margin-bottom: 0;
-    font-weight: 400;
-  }
-
   footer h5 {
+    margin-bottom: 0;
+    font-weight: 700;
     color: var(--clr-purple);
-  }
-  footer p {
-    color: var(--clr-blue-light);
-    letter-spacing: var(--spacing);
   }
 `;
 

@@ -1,14 +1,10 @@
-import { useEffect, useContext } from 'react';
+import React, { useEffect, useContext } from 'react';
 import { ProductsContext } from '../../contexts/ProductsContext';
 import { useParams, useNavigate } from 'react-router-dom';
 import { products_url as url } from '../../utils/constants';
 // import {
-//   Loading,
-//   Error,
-//   // ProductImages,
 //   // AddToCart,
 //   // Stars,
-//   // PageHero,
 // } from '../components';
 import Error from '../../components/error/Error';
 import Loading from '../../components/loading/Loading';
@@ -51,6 +47,7 @@ function SingleProduct() {
     image,
     genres,
   } = singleProduct;
+  console.log(singleProduct);
 
   return (
     <>
@@ -59,15 +56,12 @@ function SingleProduct() {
       {!singleProductLoading && !singleProductError && (
         <Wrapper>
           <div className="section section-center page">
-            <Link to="/products" className="btn">
-              back to movies
-            </Link>
             <div className="product-center">
-              <ProductImage />
+              <ProductImage image={image} />
               <section className="content">
                 <h2>{title}</h2>
-                <Stars />
-                <h5 className="price">{price}</h5>
+                <Stars rating={rating} />
+                <h5 className="price">₹{price}</h5>
                 <p className="desc">{description}</p>
                 <p className="info">
                   <span>Year : </span>
@@ -75,21 +69,22 @@ function SingleProduct() {
                 </p>
                 <p className="info">
                   <span>Genres : </span>
-                  {/* {genres.map((genre) => (
-                    <>
-                      <span>{genre}</span>
-                    </>
-                  ))} */}
+                  {genres?.map((genre, index) => (
+                    <React.Fragment key={index}>{genre} </React.Fragment>
+                  ))}
                 </p>
                 <p className="info">
                   <span>Director : </span>
                   {director}
                 </p>
                 <hr />
-                <AddToWishlist />
-                <AddToCart />
+                <AddToWishlist singleProduct={singleProduct} />
+                <AddToCart singleProduct={singleProduct} />
               </section>
             </div>
+            <Link to="/products" className="btn">
+              back to movies
+            </Link>
           </div>
         </Wrapper>
       )}
@@ -123,6 +118,9 @@ const Wrapper = styled.main`
     span {
       font-weight: 700;
     }
+  }
+  .btn {
+    margin-top: 1rem;
   }
 
   @media (min-width: 850px) {

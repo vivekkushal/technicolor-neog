@@ -1,5 +1,5 @@
-import { useContext } from 'react';
 import logo from '../../assets/logo.svg';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { ProductsContext } from '../../contexts/ProductsContext';
 import { FaTimes } from 'react-icons/fa';
@@ -119,7 +119,7 @@ const SidebarContainer = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 950px) {
     .sidebar {
       display: none;
     }

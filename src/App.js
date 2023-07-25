@@ -6,6 +6,7 @@ import Home from './pages/home/Home';
 import Navbar from './components/navbar/Navbar';
 import Sidebar from './components/sidebar/Sidebar';
 import About from './pages/about/About';
+import Checkout from './pages/checkout/Checkout';
 import Products from './components/products/Products';
 import SingleProduct from './pages/singleProduct/SingleProduct';
 import Cart from './components/addToCart/AddToCart';
@@ -30,6 +31,7 @@ function App() {
         <Route path="/mockman" element={<Mockman />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/checkout" element={<Checkout />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
