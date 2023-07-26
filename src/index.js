@@ -7,6 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import { ProductsProvider } from './contexts/ProductsContext';
 import { CategoriesProvider } from './contexts/CategoriesContext';
+import { FilterProvider } from './contexts/FilterContext';
 
 // Call make Server
 makeServer();
@@ -16,7 +17,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <ProductsProvider>
       <CategoriesProvider>
-        <App />
+        <FilterProvider>
+          <App />
+        </FilterProvider>
       </CategoriesProvider>
     </ProductsProvider>
   </BrowserRouter>

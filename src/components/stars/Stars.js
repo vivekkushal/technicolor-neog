@@ -4,7 +4,6 @@ function Stars({ rating }) {
   const outOfFive = rating / 2;
   const outOfFiveStars = Array.from({ length: 5 }, (x, index) => {
     const number = index + 0.5;
-
     return (
       <span key={index}>
         {outOfFive >= index + 1 ? (
@@ -17,6 +16,7 @@ function Stars({ rating }) {
       </span>
     );
   });
+
   return (
     <Wrapper>
       <div className="stars">

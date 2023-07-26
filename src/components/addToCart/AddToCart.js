@@ -5,11 +5,15 @@ import { Link } from 'react-router-dom';
 import AmountButtons from '../amountButtons/AmountButtons';
 
 const AddToCart = ({ singleProduct }) => {
-  const { _id } = singleProduct;
+  // const { _id, available } = singleProduct;
   const [watches, setWatches] = useState(1);
 
-  const increase = () => {};
-  const decrease = () => {};
+  const increase = () => {
+    setWatches((prev) => (prev < 5 ? prev + 1 : 5));
+  };
+  const decrease = () => {
+    setWatches((prev) => (prev > 1 ? prev - 1 : 1));
+  };
 
   return (
     <Wrapper>
@@ -18,9 +22,10 @@ const AddToCart = ({ singleProduct }) => {
           watches={watches}
           increase={increase}
           decrease={decrease}
-        >
-          <Link to="/cart">add to cart</Link>
-        </AmountButtons>
+        />
+        <Link to="/cart" className="btn">
+          add to cart
+        </Link>
       </div>
     </Wrapper>
   );
@@ -33,6 +38,8 @@ const Wrapper = styled.section`
   }
 
   .btn {
+    background: var(--clr-purple);
+    color: var(--clr-primary-1);
     margin-top: 1rem;
     width: 140px;
   }

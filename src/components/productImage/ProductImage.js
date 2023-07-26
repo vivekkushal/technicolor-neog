@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 function ProductImage({ image }) {
-  console.log(image);
   return (
     <Wrapper>
       <img src={image} alt="poster" className="main" />

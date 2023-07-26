@@ -11,6 +11,7 @@ export const products = [
     title: 'The Shawshank Redemption',
     director: 'Frank Darabont',
     price: 999,
+    available: true,
     releaseYear: 1994,
     rating: 9.3,
     description:
@@ -24,6 +25,7 @@ export const products = [
     title: 'The Godfather',
     director: 'Francis Ford Coppola',
     price: 899,
+    available: true,
     releaseYear: 1972,
     rating: 9.2,
     description:
@@ -37,6 +39,7 @@ export const products = [
     title: 'Pulp Fiction',
     director: 'Quentin Tarantino',
     price: 799,
+    available: false,
     releaseYear: 1994,
     rating: 8.9,
     description:
@@ -50,6 +53,7 @@ export const products = [
     title: 'The Dark Knight',
     director: 'Christopher Nolan',
     price: 999,
+    available: true,
     releaseYear: 2008,
     rating: 9.0,
     description:
@@ -63,6 +67,7 @@ export const products = [
     title: "Schindler's List",
     director: 'Steven Spielberg',
     price: 899,
+    available: true,
     releaseYear: 1993,
     rating: 8.9,
     description:
@@ -76,6 +81,7 @@ export const products = [
     title: 'Fight Club',
     director: 'David Fincher',
     price: 799,
+    available: true,
     releaseYear: 1999,
     rating: 8.8,
     description:
@@ -89,6 +95,7 @@ export const products = [
     title: 'Forrest Gump',
     director: 'Robert Zemeckis',
     price: 899,
+    available: true,
     releaseYear: 1994,
     rating: 8.8,
     description:
@@ -102,6 +109,7 @@ export const products = [
     title: 'Inception',
     director: 'Christopher Nolan',
     price: 999,
+    available: true,
     releaseYear: 2010,
     rating: 8.7,
     description:
@@ -115,6 +123,7 @@ export const products = [
     title: 'The Matrix',
     director: 'The Wachowski Brothers',
     price: 799,
+    available: true,
     releaseYear: 1999,
     rating: 8.7,
     description:
@@ -128,6 +137,7 @@ export const products = [
     title: 'Goodfellas',
     director: 'Martin Scorsese',
     price: 899,
+    available: false,
     releaseYear: 1990,
     rating: 8.7,
     description:
@@ -141,6 +151,7 @@ export const products = [
     title: 'The Lord of the Rings: The Fellowship of the Ring',
     director: 'Peter Jackson',
     price: 999,
+    available: true,
     releaseYear: 2001,
     rating: 8.8,
     description:
@@ -154,6 +165,7 @@ export const products = [
     title: 'The Lord of the Rings: The Two Towers',
     director: 'Peter Jackson',
     price: 999,
+    available: false,
     releaseYear: 2002,
     rating: 8.7,
     description:
@@ -167,6 +179,7 @@ export const products = [
     title: 'The Lord of the Rings: The Return of the King',
     director: 'Peter Jackson',
     price: 999,
+    available: true,
     releaseYear: 2003,
     rating: 8.9,
     description:
@@ -180,6 +193,7 @@ export const products = [
     title: 'Seven',
     director: 'David Fincher',
     price: 799,
+    available: true,
     releaseYear: 1995,
     rating: 8.6,
     description:
@@ -193,6 +207,7 @@ export const products = [
     title: 'The Silence of the Lambs',
     director: 'Jonathan Demme',
     price: 899,
+    available: true,
     releaseYear: 1991,
     rating: 8.6,
     description:
@@ -206,6 +221,7 @@ export const products = [
     title: 'The Usual Suspects',
     director: 'Bryan Singer',
     price: 799,
+    available: false,
     releaseYear: 1995,
     rating: 8.5,
     description:
@@ -219,6 +235,7 @@ export const products = [
     title: 'Saving Private Ryan',
     director: 'Steven Spielberg',
     price: 899,
+    available: true,
     releaseYear: 1998,
     rating: 8.6,
     description:
@@ -232,6 +249,7 @@ export const products = [
     title: 'The Lion King',
     director: 'Roger Allers, Rob Minkoff',
     price: 799,
+    available: true,
     releaseYear: 1994,
     rating: 8.5,
     description:
@@ -245,6 +263,7 @@ export const products = [
     title: 'Interstellar',
     director: 'Christopher Nolan',
     price: 999,
+    available: true,
     releaseYear: 2014,
     rating: 8.6,
     description:
@@ -258,6 +277,7 @@ export const products = [
     title: 'Back to the Future',
     director: 'Robert Zemeckis',
     price: 799,
+    available: true,
     releaseYear: 1985,
     rating: 8.5,
     description:

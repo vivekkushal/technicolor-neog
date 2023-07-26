@@ -31,7 +31,6 @@ function SingleProduct() {
   }, [productId]);
 
   useEffect(() => {
-    console.log(singleProductError);
     if (singleProductError) {
       setTimeout(() => navigate('/'), 3000);
     }
@@ -41,6 +40,7 @@ function SingleProduct() {
     title,
     director,
     price,
+    available,
     releaseYear,
     rating,
     description,
@@ -78,8 +78,14 @@ function SingleProduct() {
                   {director}
                 </p>
                 <hr />
-                <AddToWishlist singleProduct={singleProduct} />
-                <AddToCart singleProduct={singleProduct} />
+                <div className="btns">
+                  {available ? (
+                    <AddToCart singleProduct={singleProduct} />
+                  ) : (
+                    <span>Not available in your country</span>
+                  )}
+                  <AddToWishlist singleProduct={singleProduct} />
+                </div>
               </section>
             </div>
             <Link to="/products" className="btn">
@@ -93,6 +99,9 @@ function SingleProduct() {
 }
 
 const Wrapper = styled.main`
+  .section {
+    padding: 2rem 0;
+  }
   .product-center {
     display: grid;
     gap: 4rem;
@@ -118,6 +127,9 @@ const Wrapper = styled.main`
     span {
       font-weight: 700;
     }
+  }
+  .btns {
+    display: flex;
   }
   .btn {
     margin-top: 1rem;
