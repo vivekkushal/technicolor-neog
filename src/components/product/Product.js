@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import { formatPrice } from '../utils/helpers'
 import { Link } from 'react-router-dom';
 
 function Product({ image, title, price, _id }) {

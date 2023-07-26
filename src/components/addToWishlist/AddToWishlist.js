@@ -1,17 +1,20 @@
-import { useState } from 'react';
+import { useContext } from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-// import { useCartContext } from '../context/cart_context';
+import { WishlistContext } from '../../contexts/WishlistContext';
 
 const AddToWishlist = ({ singleProduct }) => {
-  // const { _id, available } = singleProduct;
+  const { addToWishlist } = useContext(WishlistContext);
+  const { _id, title, image, price, available } = singleProduct;
 
   return (
     <Wrapper>
       <div className="btn-container">
-        <Link to="/wishlist" className="btn-wish">
+        <button
+          className="btn-wish"
+          onClick={() => addToWishlist(_id, title, image, price, available)}
+        >
           add to wishlist
-        </Link>
+        </button>
       </div>
     </Wrapper>
   );

@@ -1,6 +1,5 @@
 import { useContext } from 'react';
 import { CategoriesContext } from '../../contexts/CategoriesContext';
-// import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Error from '../error/Error';
 import Loading from '../loading/Loading';

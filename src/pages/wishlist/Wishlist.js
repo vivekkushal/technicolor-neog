@@ -1,11 +1,32 @@
-import React from 'react';
-import styled from 'styled-components';
-// import { useCartContext } from '../context/cart_context';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { CartContent } from '../../contexts/CartContext';
+import { WishlistContext } from '../../contexts/WishlistContext';
+import styled from 'styled-components';
+import WishlistContent from '../../components/wishlistContent/WishlistContent';
 
 const Wishlist = () => {
-  return <h4>wishlist page</h4>;
+  const { wishlist } = useContext(WishlistContext);
+
+  return (
+    <>
+      {wishlist.length > 0 ? (
+        <main>
+          <Wrapper className="page">
+            <WishlistContent />
+          </Wrapper>
+        </main>
+      ) : (
+        <Wrapper className="page-100">
+          <div className="empty">
+            <h2>Your wishlist is empty</h2>
+            <Link to="/products" className="btn">
+              keep shopping
+            </Link>
+          </div>
+        </Wrapper>
+      )}
+    </>
+  );
 };
 
 const Wrapper = styled.main`

@@ -4,24 +4,27 @@ import { FiLogIn } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { ProductsContext } from '../../contexts/ProductsContext';
-// import { useCartContext } from '../context/cart_context';
+import { CartContext } from '../../contexts/CartContext';
+import { WishlistContext } from '../../contexts/WishlistContext';
 // import { useUserContext } from '../context/user_context';
 
 function CartButtons() {
   const { closeSidebar } = useContext(ProductsContext);
+  const { totalCartItems } = useContext(CartContext);
+  const { totalWishlistItems } = useContext(WishlistContext);
 
   return (
     <Wrapper className="cart-btn-wrapper">
       <Link to="/wishlist" className="cart-btn" onClick={closeSidebar}>
         <span className="cart-container">
           <BsBookmarkHeart />
-          <span className="cart-value">5</span>
+          <span className="cart-value">{totalWishlistItems}</span>
         </span>
       </Link>
       <Link to="/cart" className="cart-btn" onClick={closeSidebar}>
         <span className="cart-container">
           <BsMinecart />
-          <span className="cart-value">12</span>
+          <span className="cart-value">{totalCartItems}</span>
         </span>
       </Link>
       <button type="button" className="auth-btn" onClick={closeSidebar}>

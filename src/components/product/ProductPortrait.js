@@ -1,15 +1,21 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+// import AddToCart from '../../components/addToCart/AddToCart';
+// import AddToWishlist from '../../components/addToWishlist/AddToWishlist';
 
 function ProductPortrait({ image, title, price, _id }) {
   return (
     <Wrapper>
       <Link to={`/products/${_id}`} className="container">
         <img src={image} alt={title} />
+        {/* <div className="btns">
+          <AddToCart />
+          <AddToWishlist />
+        </div> */}
       </Link>
       <footer>
         <h5>{title}</h5>
-        <p>{price}</p>
+        <p>₹{price}</p>
       </footer>
     </Wrapper>
   );
@@ -40,7 +46,7 @@ const Wrapper = styled.article`
   footer h5,
   footer p {
     margin-bottom: 0;
-    font-weight: 400;
+    font-weight: 700;
   }
 
   footer h5 {

@@ -31,12 +31,6 @@ export const categories = [
       'https://www.themoviedb.org/t/p/w1280/qJ2tW6WMUDux911r6m7haRef0WH.jpg',
   },
   {
-    _id: 'f019cce4-1345-425d-be91-3106a491403b',
-    categoryName: 'History',
-    image:
-      'https://www.themoviedb.org/t/p/w1280/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg',
-  },
-  {
     _id: '0a13e837-10ad-4e12-8790-eefe28cdccff',
     categoryName: 'War',
     image:
@@ -49,22 +43,10 @@ export const categories = [
       'https://www.themoviedb.org/t/p/w1280/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg',
   },
   {
-    _id: '96c61db9-f9a0-4e39-abbc-a1bb5ca9be16',
-    categoryName: 'Romance',
-    image:
-      'https://www.themoviedb.org/t/p/w1280/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg',
-  },
-  {
     _id: '07216304-1222-43b5-bd8a-1977380c2dd5',
     categoryName: 'Science Fiction',
     image:
       'https://www.themoviedb.org/t/p/w1280/edv5CZvWj09upOsy2Y6IwDhK8bt.jpg',
-  },
-  {
-    _id: '92f83e00-8196-4fca-b5ab-4ee5ed600c42',
-    categoryName: 'Adventure',
-    image:
-      'https://www.themoviedb.org/t/p/w1280/fNOH9f1aA7XRTzl1sAOx9iF553Q.jpg',
   },
   {
     _id: '1bc13edc-6a70-4d66-8219-10c5b1494d51',

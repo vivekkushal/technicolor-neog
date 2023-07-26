@@ -40,14 +40,12 @@ function SingleProduct() {
     title,
     director,
     price,
-    available,
     releaseYear,
     rating,
     description,
     image,
     genres,
   } = singleProduct;
-  console.log(singleProduct);
 
   return (
     <>
@@ -79,11 +77,7 @@ function SingleProduct() {
                 </p>
                 <hr />
                 <div className="btns">
-                  {available ? (
-                    <AddToCart singleProduct={singleProduct} />
-                  ) : (
-                    <span>Not available in your country</span>
-                  )}
+                  <AddToCart singleProduct={singleProduct} />
                   <AddToWishlist singleProduct={singleProduct} />
                 </div>
               </section>

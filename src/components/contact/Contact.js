@@ -58,6 +58,7 @@ const Wrapper = styled.section`
     border: 2px solid var(--clr-black);
   }
   .form-input {
+    background: var(--clr-grey-10);
     border-right: none;
     color: var(--clr-grey-3);
     border-top-left-radius: var(--radius);

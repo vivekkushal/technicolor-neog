@@ -36,11 +36,11 @@ function Sidebar() {
               Movies
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/checkout" onClick={closeSidebar}>
               Checkout
             </Link>
-          </li>
+          </li> */}
         </ul>
         <CartButtons />
       </aside>

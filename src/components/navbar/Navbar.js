@@ -32,9 +32,9 @@ function Nav() {
           <li>
             <Link to="/products">Movies</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/checkout">Checkout</Link>
-          </li>
+          </li> */}
         </ul>
         <CartButtons />
       </div>
@@ -107,6 +107,7 @@ const NavContainer = styled.nav`
         padding: 0.5rem;
         &:hover {
           border-bottom: 2px solid var(--clr-primary-11);
+          // margin: 0px;
         }
       }
     }

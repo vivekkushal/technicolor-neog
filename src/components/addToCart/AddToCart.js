@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-// import { useCartContext } from '../context/cart_context';
+import { CartContext } from '../../contexts/CartContext';
 import AmountButtons from '../amountButtons/AmountButtons';
 
 const AddToCart = ({ singleProduct }) => {
-  // const { _id, available } = singleProduct;
+  const { addToCart } = useContext(CartContext);
+  const { _id, title, image, price, available } = singleProduct;
   const [watches, setWatches] = useState(1);
 
   const increase = () => {
@@ -18,14 +18,23 @@ const AddToCart = ({ singleProduct }) => {
   return (
     <Wrapper>
       <div className="btn-container">
-        <AmountButtons
-          watches={watches}
-          increase={increase}
-          decrease={decrease}
-        />
-        <Link to="/cart" className="btn">
-          add to cart
-        </Link>
+        {!available && <span>Not available in your country</span>}
+        <div className="btn-container-inside">
+          {available && (
+            <AmountButtons
+              watches={watches}
+              increase={increase}
+              decrease={decrease}
+            />
+          )}
+          <button
+            disabled={!available}
+            className={`btn ${available}`}
+            onClick={() => addToCart(_id, title, image, price, watches)}
+          >
+            add to cart
+          </button>
+        </div>
       </div>
     </Wrapper>
   );
@@ -34,14 +43,24 @@ const AddToCart = ({ singleProduct }) => {
 const Wrapper = styled.section`
   margin-top: 2rem;
   .btn-container {
+    display: flex;
+    flex-direction: column;
     margin-top: 2rem;
+    span {
+      margin-bottom: 1rem;
+    }
   }
-
   .btn {
     background: var(--clr-purple);
     color: var(--clr-primary-1);
     margin-top: 1rem;
     width: 140px;
+  }
+  .false {
+    background: grey;
+    color: var(--clr-primary-1);
+    width: 140px;
+    cursor: no-drop;
   }
 `;
 
